@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMETRICS AI - Predictive Commodity Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation, Search Bar, and Theme Switcher -->
+    <header class="glass-nav">
+        <div class="logo">GEMETRICS AI</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#markets">Markets</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <form class="search-form">
+            <input type="text" class="input-field" placeholder="Search...">
+            <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="theme-switcher">
+            <select id="themeSelect">
+                <option value="dark">Dark</option>
+                <option value="professional">Professional</option>
+                <option value="cyber">Cyber</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+    </header>
+
+    <!-- Hero Section with Chat Button -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Future Markets Revealed</h1>
+            <p>AI-Powered Commodity Price Prediction</p>
+            <button class="chat-btn pulse" id="openChat">Ask GEMETRICS</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Price Forecasting</h3>
+                <p>Get accurate predictions for commodity prices.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Advanced AI Models</h3>
+                <p>Utilizing state-of-the-art machine learning algorithms.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>AI Chatbot</h3>
+                <p>Ask questions and get instant answers from GEMETRICS.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-database"></i>
+                <h3>Data-Driven Insights</h3>
+                <p>Access comprehensive data and analytics.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure and Private</h3>
+                <p>Your data is safe with us.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Expert Support</h3>
+                <p>Get help from our team of experts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Ask a Question</h3>
+                <p>Click on "Ask GEMETRICS" to open the chat and type your question.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Get Instant Answers</h3>
+                <p>Our AI assistant will provide you with accurate and up-to-date information on commodity markets.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Explore More</h3>
+                <p>You can ask follow-up questions or explore our features to get deeper insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Markets Section with Charts -->
+    <section id="markets" class="markets">
+        <h2>Market Predictions Dashboard</h2>
+        <div class="chart-container">
+            <h3>Gold Price Prediction</h3>
+            <canvas id="marketChart1"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Oil Price Prediction</h3>
+            <canvas id="marketChart2"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Silver Price Prediction</h3>
+            <canvas id="marketChart3"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Copper Price Prediction</h3>
+            <canvas id="marketChart4"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Platinum Price Prediction</h3>
+            <canvas id="marketChart5"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Palladium Price Prediction</h3>
+            <canvas id="marketChart6"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <img src="images/team.jpg" alt="Our Team" class="team-image">
+        <p>GEMETRICS AI is dedicated to providing advanced AI solutions for commodity market analysis. Our team of experts combines cutting-edge technology with deep industry knowledge to deliver unparalleled insights.</p>
+        <p>Our mission is to empower traders and analysts with the tools they need to make informed decisions in the volatile commodity markets. We believe that by leveraging artificial intelligence, we can uncover patterns and predict trends that were previously impossible to detect.</p>
+        <p>At GEMETRICS AI, we are committed to innovation, accuracy, and customer satisfaction. Our platform is designed to be user-friendly, providing both technical and non-technical users with easy access to powerful analytics.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-card">
+            <p>"GEMETRICS AI has revolutionized our commodity trading strategy. The predictions are spot on!"</p>
+            <h4>John Doe, Trader</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"The chatbot is incredibly helpful. I get answers to my questions instantly."</p>
+            <h4>Jane Smith, Analyst</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"I've been using GEMETRICS AI for months, and it's saved me countless hours of research."</p>
+            <h4>Alice Johnson, Investor</h4>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is GEMETRICS AI?</h3>
+            <p>GEMETRICS AI is an AI-powered platform for predictive commodity analytics.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How does the chatbot work?</h3>
+            <p>Our chatbot, GEMETRICS, uses advanced AI to answer your questions about commodity markets.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is the data up-to-date?</h3>
+            <p>Yes, we use real-time data feeds to ensure our predictions are current.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I integrate this into my application?</h3>
+            <p>Yes, we offer API access for developers.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What commodities do you cover?</h3>
+            <p>We cover major commodities like gold, oil, silver, copper, and more.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How accurate are your predictions?</h3>
+            <p>Our models are constantly trained on the latest data, achieving high accuracy rates.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Latest Insights</h2>
+        <div class="blog-post">
+            <h3>Commodity Market Trends in 2025</h3>
+            <p>Read about the latest trends and predictions for commodity markets this year.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>How AI is Changing Commodity Trading</h3>
+            <p>Discover how artificial intelligence is transforming the way commodities are traded.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>The Future of Energy Commodities</h3>
+            <p>Explore our predictions for energy commodities in the coming years.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest market insights and AI advancements.</p>
+        <form class="newsletter-form">
+            <input type="email" class="input-field" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="input-field" placeholder="Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="input-field" placeholder="Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" class="input-field" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 GEMETRICS AI. All rights reserved.</p>
+        <p>Email: <a href="mailto:contact@gemetricsai.com">contact@gemetricsai.com</a></p>
+        <p><a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- Chat Container -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>GEMETRICS AI Assistant</h3>
+            <button id="closeChat">×</button>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
